@@ -4,18 +4,31 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
 header{
-    background-color: royalblue;
+    background-color: rgb(0, 132, 253);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
 }
 
 .header_flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+body{
+    margin-top: 80px;
 }
 
 footer{
     background-color: darkgray;
-
 }
 
 /* layout rules */
@@ -40,9 +53,10 @@ footer{
 
 .col_30, .col_double, .col_50, .col_100{
     width: calc(100% - 20px);
-    height: 300px;
-    background-color: red;
+    background-color: rgb(181, 221, 255);
     margin: 10px;
+    border-radius: 20px;
+    padding: 25px 20px;
 }
 
 .col_80{
@@ -53,9 +67,7 @@ footer{
 }
 
 .left_logo, .right_menu{
-    height: 100px;
-    width: 100px;
-    background-color: yellow;
+    margin: 10px 20px;
 }
 
 .hamburger, .extended_menu{
@@ -63,22 +75,126 @@ footer{
     height: 100%;
 }
 
-.hamburger{
-    background-color: green;
+.extended_menu{
+    display: none;
 }
 
-.extended_menu{
-    background-color: red;
-    display: none;
+.extended_menu a{
+    padding: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.extended_menu a:hover{
+    text-decoration: underline;
 }
 
 #planning, #get_started, #benefits{
     background-color: violet;
 }
 
+.content{
+    padding: 20px;
+}
+
+.phone{
+    width: 100%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.text_center{
+    text-align: center;
+}
+
+.spacing_20{
+    margin: 20px 0px;
+}
+/* aestetics */
+
+.fake_button{
+    background-color: rgb(0, 132, 253);
+    padding: 10px 45px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.no_button{
+    background-color: transparent;
+    border: none;
+}
+
+.hamburger_icon:before{
+    color: white;
+    font-family: 'FontAwesome';
+    content: '\f0c9';
+    font-size: 2em;
+}
+
+.app_store:before{
+    color: white;
+    font-family: 'FontAwesome';
+    content: '\f179';
+    font-size: 1em;
+    padding-right: 5px;
+}
+
+/* demo style */
+
+#demo h3{
+    color:rgb(0, 132, 253);
+    margin:20px 0px;
+}
+
+#demo .col_100 h3{
+    color:rgb(0, 132, 253);
+    margin:20px 0px 0px;
+}
+
+#demo p{
+    color: rgb(87, 87, 87);
+    font-weight: bold;
+    font-size: 0.9em;
+    line-height: 1.6em;
+}
+
+#demo .col_double, #demo .col_100, #demo .col_50{
+    padding: 0px 10px;
+}
+
+.icon{
+    color: rgb(0, 132, 253);
+    font-family: 'FontAwesome';
+    font-size: 5em;
+    padding-right: 5px;
+}
+
+.code:before{
+    content: '\f1c9';
+}
+
+.compass:before{
+    content: '\f568';
+}
+
+.compass:before{
+    content: '\f568';
+}
+
+.laptop_code:before{
+    content: '\f5fc';
+}
+
+.bullhorn:before{
+    content: '\f0a1';
+}
+
 /* TABLET */
 @media screen and (min-width: 768px){
-    .container,{
+    .container{
         max-width: 750px;
     }
 
@@ -104,6 +220,9 @@ footer{
         flex-wrap: nowrap;
     }
 
+    .phone{
+        width: 50%;
+    }
 }
 
 /* SOLO TABLET */
@@ -112,6 +231,8 @@ footer{
     #benefits .col_30{
         width: calc(100% / 2 - 20px);
     }
+
+
 }
 
 /* DESKTOP */
@@ -135,6 +256,11 @@ footer{
     .col_50{
         width: calc(100% / 2 - 20px);
     }
+
+    .phone{
+        padding-right: 30px;
+    }
+
 }
 
 /* LARGE DESKTOP */

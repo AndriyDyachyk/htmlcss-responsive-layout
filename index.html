@@ -5,35 +5,74 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive layout</title>
+        <script src="https://kit.fontawesome.com/200b75a9a1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header_blue">
             <div class="container">
                 <div class="header_flex">
                     <div class="left_logo">
-
+                        <a href="" id="logo"><img src="./img/logo.png" alt=""></a>
                     </div>
                     <div class="right_menu">
                         <div class="hamburger">
-
+                            <button class="no_button hamburger_icon"></button>
                         </div>
                         <div class="extended_menu">
-
+                            <a href="#planning">Planning</a>
+                            <a href="#testimonials">Testimonials</a>
+                            <a href="#features">Features</a>
+                            <a href="#about_us">About Us</a>
+                            <a href="" class="fake_button reverse_button">Get started</a><br>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <section>
+            <section id="demo">
                 <div class="container">
                     <div class="row">
-                        <div class="col_double"></div>
-                        <div class="col_30"></div>
-                        <div class="col_30"></div>
-                        <div class="col_30"></div>
-                        <div class="col_30"></div>
+                        <div class="col_double">
+                            <div class="row">
+                                <div class="col_100">
+                                    <h3>Get a demo application</h3>
+                                </div>
+                                <div class="col_50">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint numquam ea eaque voluptatem quam dolor tenetur, ratione iusto maiores, odit deleniti eius eum? Quia incidunt nobis libero molestias vitae!</p><br>
+                                    <div class="spacing_20">
+                                        <a href="" class="fake_button app_store">Appstore</a>
+                                    </div>
+                                </div>
+                                <img src="./img/phone.png" alt="" class="phone ">
+                            </div>
+                        </div>
+                        <div class="col_30 text_center">
+                            <span class="code icon"></span>
+                            <h3>Clean Code</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae quibusdam placeat. Dolorem eaque, esse soluta quia dolores unde sit adipisci quo, sequi voluptates deserunt libero ea officiis harum nihil?</p>
+                        </div>
+                        <div class="col_30 text_center">
+                            <span class="compass icon"></span>
+                            <h3>Web Design</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae quibusdam placeat. Dolorem eaque, esse soluta quia dolores unde sit adipisci quo, sequi voluptates deserunt libero ea officiis harum nihil?</p>
+                        </div>
+                        <div class="col_30 text_center">
+                            <span class="laptop_code icon"></span>
+                            <h3>Development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae quibusdam placeat. Dolorem eaque, esse soluta quia dolores unde sit adipisci quo, sequi voluptates deserunt libero ea officiis harum nihil?</p>
+
+                        </div>
+                        <div class="col_30 text_center">
+                            <span class="bullhorn icon"></span>
+                            <h3>Branding</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repudiandae quibusdam placeat. Dolorem eaque, esse soluta quia dolores unde sit adipisci quo, sequi voluptates deserunt libero ea officiis harum nihil?</p>
+
+                        </div>
                     </div>
                 </div>
             </section>
@@ -56,7 +95,7 @@
                     </div>
                 </div>
             </section>
-            <section id="benefits">
+            <section id="features">
                 <div class="container">
                     <h2 class="text_center"> Benefits with us</h2>
                     <div class="row">
