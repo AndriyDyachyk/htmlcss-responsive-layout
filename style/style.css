@@ -142,6 +142,8 @@ img{
     border: none;
 }
 
+
+/* header style */
 .hamburger_icon:before{
     color: white;
     font-family: 'FontAwesome';
@@ -155,6 +157,13 @@ img{
     content: '\f179';
     font-size: 1em;
     padding-right: 5px;
+}
+
+header .fake_button{
+    background-color: white;
+    color: black;
+    font-weight: 300;
+    padding: 10px 15px;
 }
 
 /* demo style */
