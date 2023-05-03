@@ -14,7 +14,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-
+    z-index: 100;
 }
 
 .header_flex{
@@ -35,8 +35,6 @@ section{
     padding: 30px 20px;
     margin: 20px 0px;
 }
-
-
 
 h3{
     margin:20px 0px;
@@ -103,10 +101,6 @@ p{
 
 .extended_menu a:hover{
     text-decoration: underline;
-}
-
-#planning, #get_started, #benefits{
-    background-color: violet;
 }
 
 .content{
@@ -400,6 +394,43 @@ img{
     content: '\f08c';
     color: white;
     padding-right: 5px;
+}
+
+/* get started style */
+
+#get_started{
+    background-color: rgb(149, 147, 230);
+    color:white;
+}
+
+#get_started h4{
+    font-weight: 200;
+}
+
+#get_started h2{
+    margin: 20px 10px 0px;
+    font-size: 1.7em;
+}
+
+.attention{
+    color: orange;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+#get_started p{
+    margin: 40px 0px;
+}
+
+#get_started .fake_button{
+    background-color: white;
+    color: rgb(149, 147, 230);
+    border-radius: 30px;
+    padding: 20px 65px;
+}
+
+.copyright a{
+    color: white;
 }
 
 /* TABLET */
