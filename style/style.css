@@ -28,7 +28,7 @@ body{
 }
 
 footer{
-    background-color: darkgray;
+    background-color: rgb(51, 51, 51);
 }
 
 section{
@@ -429,8 +429,26 @@ img{
     padding: 20px 65px;
 }
 
+#get_started {
+    margin: 20px 0px 0px;
+}
+
 .copyright a{
     color: white;
+}
+
+/* footer style */
+
+footer section{
+    margin: 0;
+}
+
+footer{
+    color: white;
+}
+
+footer a{
+    color: rgb(149, 147, 230);
 }
 
 /* TABLET */
