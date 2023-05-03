@@ -24,11 +24,32 @@ header{
 }
 
 body{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 footer{
     background-color: darkgray;
+}
+
+section{
+    padding: 30px 20px;
+}
+
+h2{
+    margin: 40px 0px;
+    font-size: 60px ;
+}
+
+h3{
+    margin:20px 0px;
+}
+
+p{
+    line-height: 1.6em;
+}
+
+.flex_end{
+    align-items: flex-end;
 }
 
 /* layout rules */
@@ -51,9 +72,8 @@ footer{
     justify-content: space-between;
 }
 
-.col_30, .col_double, .col_50, .col_100{
+.col_30, .col_double, .col_40, .col_50, .col_60, .col_100{
     width: calc(100% - 20px);
-    background-color: rgb(181, 221, 255);
     margin: 10px;
     border-radius: 20px;
     padding: 25px 20px;
@@ -111,6 +131,10 @@ footer{
 .spacing_20{
     margin: 20px 0px;
 }
+img{
+    width: 100%;
+}
+
 /* aestetics */
 
 .fake_button{
@@ -146,23 +170,26 @@ footer{
 
 #demo h3{
     color:rgb(0, 132, 253);
-    margin:20px 0px;
 }
 
 #demo .col_100 h3{
-    color:rgb(0, 132, 253);
-    margin:20px 0px 0px;
+    margin:20px 0px 0px 0px;
+    padding: 0px 10px;
 }
 
 #demo p{
     color: rgb(87, 87, 87);
     font-weight: bold;
     font-size: 0.9em;
-    line-height: 1.6em;
 }
 
 #demo .col_double, #demo .col_100, #demo .col_50{
+    background-color: rgb(181, 221, 255);
     padding: 0px 10px;
+}
+
+#demo .col_30{
+    background-color: rgb(181, 221, 255);
 }
 
 .icon{
@@ -190,6 +217,49 @@ footer{
 
 .bullhorn:before{
     content: '\f0a1';
+}
+
+/* planning style */
+
+#planning{
+    background-color: rgb(149, 147, 230);
+}
+
+.left_planning{
+    color: white;
+    padding: 0px 50px;
+}
+
+.left_planning p{
+    font-size: 0.9em;
+    margin: 20px 0px 0px 0px;
+}
+
+.left_planning img{
+    width: 100%;
+    margin: 60px 0px;
+}
+
+.right_planning{
+    background-color: white;
+    font-weight: 400;
+}
+
+.right_planning img{
+    width: 70%;
+}
+
+.go_down::before{
+    font-family: 'FontAwesome';
+    content: '\f063';
+    font-size: 1.5em;
+    font-weight: bold;
+    color: black;
+    display:block;
+    margin-top: 30px;
+    padding: 16px 19px;
+    background-color: rgb(149, 147, 230);
+    border-radius: 50%;
 }
 
 /* TABLET */
@@ -232,13 +302,20 @@ footer{
         width: calc(100% / 2 - 20px);
     }
 
-
 }
 
 /* DESKTOP */
 @media screen and (min-width: 991px){
     .container{
         max-width: 950px;
+    }
+
+    #planning .container{
+        width: 925px;
+    }
+
+    .col_100{
+        width: 100%;
     }
 
     .extended_menu{
@@ -259,6 +336,23 @@ footer{
 
     .phone{
         padding-right: 30px;
+    }
+
+    .col_40{
+        width: calc(40% - 20px);
+        height: 50%;
+    }
+
+    .col_60{
+        width: calc(60% - 20px);
+    }
+
+    .left_planning img{
+        width: 80%;
+    }
+
+    h2{
+        font-size: 30px;
     }
 
 }
